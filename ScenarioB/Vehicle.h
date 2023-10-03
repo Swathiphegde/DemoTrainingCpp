@@ -1,7 +1,7 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
-#include "Type.h"
+
 #include<iostream>
 #include "VehicleType.h"
 class Vehicle
@@ -14,8 +14,8 @@ private:
 
 public:
     Vehicle(const Vehicle& obj)=default;
-    Vehicle(std::string id,std::string brand,float price,Type type);
-    Vehicle(std::string id,std::string brand,Type type);
+    Vehicle(std::string id,std::string brand,float price,VehicleType type);
+    Vehicle(std::string id,std::string brand,VehicleType type);
     //pure virtual function= abstract method
     virtual float calculateTax()=0;
     ~Vehicle() {
