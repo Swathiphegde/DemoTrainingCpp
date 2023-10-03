@@ -6,6 +6,10 @@ void createObjct(Vehicle* arr[3])
     arr[0]=new Bike("bk111","Bajaj",VehicleType::BIKE,3100090.0f,BikeType::COMMUTE);
     arr[1]=new Car("v102","Honda",965652.0f,VehicleType::CAR,CarType::HATCHBACK);
     arr[2]=new Car("v103","Hyundai",9800980.0f,VehicleType::CAR,CarType::SUV);
+
+    for(int i=0;i<3;i++){
+        std::cout<<"ARR["<<i<<"] : "<<*(arr[i])<<"\n";
+    }
 }
 
 float averagePrice(Vehicle *arr[3])

@@ -10,6 +10,7 @@ int main(){
     createObjct(arr);
 
     std::cout<<"Average price : "<<averagePrice(arr)<<std::endl;
+    
 
     calculateTax(arr);
 

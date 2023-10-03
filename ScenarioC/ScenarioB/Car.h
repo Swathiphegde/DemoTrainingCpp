@@ -2,6 +2,7 @@
 #define CAR_H
 #include "Vehicle.h"
 #include "CarType.h"
+#include <ostream>
 class Car:public Vehicle
 {
 private:
@@ -19,6 +20,10 @@ public:
             <<"deleted\n";}
 
     CarType carType() const {return _car_type;}
-};
 
+    friend std::ostream &operator<<(std::ostream &os, const Car &rhs);
+
+    
+};
+std::string DisplayEnum(const CarType val);
 #endif // CAR_H

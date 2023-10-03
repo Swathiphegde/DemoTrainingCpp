@@ -18,6 +18,9 @@ public:
         <<id()
         <<" deleted\n";
     }
-};
 
+    friend std::ostream &operator<<(std::ostream &os, const Bike &rhs);
+    
+};
+std::string DisplayEnum(const BikeType val);
 #endif // BIKE_H
