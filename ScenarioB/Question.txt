@@ -1,0 +1,5 @@
+create new type  with one or more sub-cat.
+new data must be a type of any cate.
+
+calculateTax whose implementation might be different but signature must be same(no parameter,return float)
+calculateTax "returns 10% of _price"
