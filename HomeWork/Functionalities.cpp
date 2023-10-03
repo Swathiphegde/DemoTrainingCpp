@@ -9,17 +9,17 @@ void createObject(Customer *arr[5])
     arr[4]=new Customer(105,"Amit",CustomerType::REGULAR,99.0f);
 }
 
-void findCustomer(Customer* arr[3],CustomerType type,Customer (&arr2)[]){
+void findCustomer(Customer* arr[5],CustomerType type,Customer (&arr2)[]){
     int j=-1;
     for(int i=0;i<5;i++){
         if(type==(arr[i])->type()){
-            arr2[++j]=arr[i];
+            arr2[++j]=*(arr[i]);
         }
     }
     
 }
 
-void creditScores(Customer* arr[3]){
+void creditScores(Customer* arr[5]){
     int j=-1;
     for(int i=0;i<5;i++){
         if((arr[i])->customerStoreCredits()>=100&&(arr[i])->customerStoreCredits()<=200){
@@ -28,7 +28,7 @@ void creditScores(Customer* arr[3]){
     }
 }
 
-float averageStoreCredits(Customer *arr[3], CustomerType type)
+float averageStoreCredits(Customer *arr[5], CustomerType type)
 {
     float total=0.0f;
     int c=0;
