@@ -19,7 +19,7 @@ public:
     //pure virtual function= abstract method
     virtual float calculateTax()=0;
     ~Vehicle() {
-        std::cout<<"Object with id : "<<_id<<" deleted";
+        std::cout<<"Object with id : "<<_id<<" deleted\n";
     }
 
     std::string id() const { return _id; }

@@ -15,7 +15,7 @@ public:
 
 
     ~Car() {
-        std::cout<<"car wit id: "<<id()
+        std::cout<<"\ncar with id: "<<id()
             <<"deleted\n";}
 
     CarType carType() const {return _car_type;}
