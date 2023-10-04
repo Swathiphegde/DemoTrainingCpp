@@ -2,15 +2,17 @@
 #include "VehicleType.h"
 #include "Vehicle.h"
 #include "Functionalities.h"
+#include<memory>
 
 int main(){
-    Vehicle* vehicle[5];
-    createObject(vehicle);
+    // Vehicle* vehicle[5];
+    // createObject(vehicle);
 
     
-    AveragePrice(vehicle);
+    // AveragePrice(vehicle);
 
-    minimumCarPrice(vehicle);
+    // minimumCarPrice(vehicle);
 
-    freeMemory(vehicle);
+    // freeMemory(vehicle);
+    std::unique_ptr<Vehicle> uptr;
 }

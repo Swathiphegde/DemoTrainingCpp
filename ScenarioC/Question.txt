@@ -1,0 +1,3 @@
+class Bike
+_bike_milage float
+_bike_type  COMMUTE,SPORTS,atv
