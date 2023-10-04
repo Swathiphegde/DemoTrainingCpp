@@ -1,12 +1,12 @@
 #include "Vehicle.h"
 
-std::ostream &operator<<(std::ostream &os, const Vehicle &rhs) {
-    os << "_id: " << rhs._id
-       << " _brand: " << rhs._brand
-       << " _price: " << rhs._price
-       << " _type: " <<DisplayEnum(rhs._type);
-    return os;
-}
+// std::ostream &operator<<(std::ostream &os, const Vehicle &rhs) {
+//     os << "_id: " << rhs._id
+//        << " _brand: " << rhs._brand
+//        << " _price: " << rhs._price
+//        << " _type: " <<DisplayEnum(rhs._type);
+//     return os;
+// }
 std::string DisplayEnum(const VehicleType val)
 {
    if(val==VehicleType::BIKE)

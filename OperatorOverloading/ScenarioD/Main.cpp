@@ -13,7 +13,7 @@ int main(){
 
     minimumCarPrice(vehicle);
 
-    Vehicle v1("101","ttt",99383)
+
     
 
     //freeMemory(vehicle);

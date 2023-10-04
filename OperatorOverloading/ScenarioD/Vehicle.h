@@ -45,7 +45,16 @@ public:
 
     VehicleType type() const { return _type; }
 
-    friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
+   // friend std::ostream &operator<<(std::ostream &os, const Vehicle &rhs);
+
+
+    friend std::ostream& operator<<( std::ostream& os,const Vehicle& obj){
+        os<<"Id: "<<obj._id
+        <<"\t"<<"Brand "<<obj._brand
+        <<"\t"<<"Price "<<obj._price
+        <<"\t"<<DisplayEnum(obj._type);
+        return os;
+    }
 };
 std::string DisplayEnum(const VehicleType val);
 
