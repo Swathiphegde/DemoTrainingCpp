@@ -34,8 +34,6 @@ float averageBudget(Project* arr1[3]);
 
 void freeMemory(Emloyee *arr1[3]);
 
-bool checkNullPtr(Emloyee* arr1[3]);
-
 
 /*
 

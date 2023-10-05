@@ -25,6 +25,7 @@ public:
     Emloyee(const Emloyee& )=default;
 
     ~Emloyee() {
+        delete _project;
         std::cout<<"\nEmployee with ID : "<<_id<<" is destroyed";
     }
 

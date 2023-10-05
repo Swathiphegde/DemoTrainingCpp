@@ -40,4 +40,3 @@ int main(){
     Employee<ls>* e1=new Employee<ls>(skills,"e101",34.2f); 
     std::cout<<*e1;
 }
-;
