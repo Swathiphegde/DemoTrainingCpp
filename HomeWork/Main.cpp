@@ -10,15 +10,28 @@ int main(){
     createObject(arr);
 
     //get list of particular customerType
-    Customer arr2[]{};
-    findCustomer(arr,CustomerType::VIP,arr2);
-    for(Customer c:arr2){
-        std::cout<<"\n"<<c;
+    Customer **arr2;
+    arr2=findCustomer(arr,CustomerType::VIP);
+    std::cout<<"Customers with type VIP"<<std::endl;
+    for(int i=0;i<3;i++){
+        if(arr2[i]!=nullptr){
+            std::cout<<*(arr2[i]);
+        }
+        std::cout<<std::endl;
     }
+    std::cout<<std::endl;
+    
 
     //get list of customers whose creditscore is between 100 and 200 (inclusive)
-    // Customer* arr3[]{};
-    // creditScores(arr,arr3);
+     arr2=creditScores(arr);
+     std::cout<<"Customers whose credits score is between 100 and 200"<<std::endl;
+    for(int i=0;i<3;i++){
+        if(arr2[i]!=nullptr){
+            std::cout<<*(arr2[i]);
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
 
     //get average customer credit scores
     std::cout<<"Average credit scores of customer type VIP  is : "

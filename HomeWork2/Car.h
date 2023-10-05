@@ -39,7 +39,7 @@ public:
                 <<" is destroyed\n";
     }
 
-    float operator+(Car car){
+    float operator+(Car car){   //c1.operator+(c2)
         return this->carPrice()+car.carPrice();
     }
 
@@ -88,5 +88,4 @@ public:
 };
 
 std::string DisplayEnum(const CAR_CATEGORY val);
-
 #endif // CAR_H

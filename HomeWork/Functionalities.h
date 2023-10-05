@@ -11,13 +11,13 @@ void createObject(Customer* arr[5]);
 A function to find and return a container of Customer objects whose customerType
 matches the type passed as the second argument.
 */
-void findCustomer(Customer* arr[5],CustomerType type,Customer (&arr2)[]);
+Customer** findCustomer(Customer* arr[5],CustomerType type);
 
 /*
 A function to return a container of all Customer instances whose customerStoreCredits
 are between 100 and 200 (both values included).
 */
-void creditScores(Customer* arr[5]);
+Customer** creditScores(Customer* arr[5]);
 
 /*
 A function to find the average customerStoreCredits of all customers whose customer

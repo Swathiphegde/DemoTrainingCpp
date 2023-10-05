@@ -34,6 +34,9 @@ Emloyee* employeeWithHighestSalary(Emloyee *arr1[3])
 
 int countEmployeeWithGivenDepartment(Emloyee *arr1[3],Departent dept)
 {
+    if(checkNullPtr(arr1)){
+        throw std::runtime_error("Data is empty!!");
+    }
     int c=0;
     for(int i=0;i<3;i++){
         if(dept==arr1[i]->dept()){
