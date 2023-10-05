@@ -28,7 +28,7 @@ public:
         std::cout<<"\nVehicle with ID : "<<_id<<" deleted";
     }
 
-    virtual void calculateTax()=0;
+    virtual void calculateTax();
 
     std::string id() const { return _id; }
 
@@ -37,6 +37,10 @@ public:
     float price() const { return _price; }
 
     VehicleType type() const { return _type; }
+
+
+    
 };
+
 
 #endif // VEHICLE_H

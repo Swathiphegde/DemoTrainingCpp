@@ -16,8 +16,10 @@ public:
     Vehicle(const Vehicle& obj)=default;
     Vehicle(std::string id,std::string brand,float price,VehicleType type);
     Vehicle(std::string id,std::string brand,VehicleType type);
+
     //pure virtual function= abstract method
     virtual float calculateTax()=0;
+    
     virtual ~Vehicle() {
         std::cout<<"Object with id : "<<_id<<" deleted\n";
     }

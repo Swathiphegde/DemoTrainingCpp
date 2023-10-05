@@ -16,12 +16,12 @@ void averagePrice(Vehicle *arr[SIZE])
     std::cout<<"Average Price : "<<(total/SIZE);
 }
 
-// void calculateTax(Vehicle *arr[SIZE])
-// {
-//     for(int i=0;i<SIZE;i++){
-//         arr[i]->calculateTax();
-//     }
-// }
+void calculateTax(Vehicle *arr[SIZE])
+{
+    for(int i=0;i<SIZE;i++){
+        arr[i]->calculateTax();
+    }
+}
 
 void freeMemory(Vehicle *arr[3])
 {

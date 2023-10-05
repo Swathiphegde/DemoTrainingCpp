@@ -28,7 +28,7 @@ public:
         std::cout<<"\nCar Object is deleted : ID : "<<id();
     }
 
-    void calculateTax() override;
+    void calculateTax();
 
     CarType carType() const { return _car_type; }
 };

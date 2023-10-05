@@ -10,8 +10,10 @@ Vehicle::Vehicle(std::string id, std::string brand, VehicleType type)
 {
 }
 
-// void Vehicle::calculateTax()
-// {
+
+void Vehicle::calculateTax()
+{
     
-//     std::cout<<"\nVehicle calculateTax(10%) : "<<(0.1f*price());
-// }
+    std::cout<<"\nVehicle calculateTax(10%) : "<<(0.1f*price());
+}
+

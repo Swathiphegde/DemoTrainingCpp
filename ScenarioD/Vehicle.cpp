@@ -36,3 +36,5 @@ float Vehicle::calculateTx(float cgst, float sgst)
 {
     return (cgst*_price)+(sgst*_price*3);
 }
+
+
