@@ -27,7 +27,8 @@ public:
         for(std::string elem : rhs._skills){
             os<<elem<<"\t";
         }   
-           os<< " _id: " << rhs._id<< " _age: " << rhs._age<<"\n";
+           os<< " _id
+            " << rhs._id<< " _age: " << rhs._age<<"\n";
         return os;
     }
     
