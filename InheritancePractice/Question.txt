@@ -1,0 +1,13 @@
+Create Vehicle class with
+    std::string _id;
+    std::string _brand;
+    float _price;
+    VehicleType _type;
+Create Car class with
+    CarType _car_type;
+
+Car inherits Vehicle class
+
+Funtionalities : 
+- Average Price of all the cars
+- CalculateTax for each of the Vehicle

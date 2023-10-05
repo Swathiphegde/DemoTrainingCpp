@@ -16,7 +16,7 @@ private:
     int _carFuelCapacity;
 
 public:
-    Car()=delete;
+    Car();//=delete;
 
     Car(std::string carChassisNumber,
     std::string carBrand,

@@ -9,6 +9,13 @@ void createObject(Vehicle *container[3])
    container[2] =new Vehicle("v103","Toyota",Type::CAR,1270000.0f);
 }
 
+void freeMemory(Vehicle *arr[3])
+{
+    for(int i=0;i<3;i++){
+        delete arr[i];
+    }
+}
+
 float averagePrice(Vehicle *container[3])
 {
     float total=0.0f;

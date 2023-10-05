@@ -25,7 +25,9 @@ class Vehicle{
     );
     //defaulted copy constructor-->Compiler generates default version
     Vehicle(const Vehicle&)=default;    //shallow copy(Reference)
-    ~Vehicle(){}
+    ~Vehicle(){
+        std::cout<<"\nDeleted";
+    }
 
     //id getter
     std::string id() const { return _id; }

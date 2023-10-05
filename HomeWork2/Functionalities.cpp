@@ -30,7 +30,7 @@ int findCountOfGivenBrand(Car *arr[3], CAR_CATEGORY type)
 void findBestPassengerCar(Car *arr[3], CAR_CATEGORY type)
 {
     int max=0;
-    Car carDetails=*arr[0];
+    Car carDetails;//=*arr[0];
     for(int i=1;i<3;i++){
         if(type==(arr[i])->type()){
             if(max<=arr[i]->carSeatCount()){
