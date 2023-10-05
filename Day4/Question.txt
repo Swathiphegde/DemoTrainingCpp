@@ -1,0 +1,13 @@
+Class Employee
+
+-id string
+-name string
+-salary float
+-dept {development,Testing,Integration}
+-project pointer to project Class
+
+class project
+
+-name string
+-duration_days Int
+-budget float
