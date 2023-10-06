@@ -8,7 +8,7 @@
         "name": "(gdb) Launch",
         "type": "cppdbg",
         "request": "launch",
-        "program": "/workspaces/DemoTrainingCpp/TemplateDemo/a.out",
+        "program": "/workspaces/DemoTrainingCpp/Day5/Cards/a.out",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${fileDirname}",
