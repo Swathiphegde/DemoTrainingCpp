@@ -21,16 +21,16 @@ public:
     }
 
     template <typename A>
-    friend std::ostream &operator<<(std::ostream &os, const Employee<A> &rhs) {
-        //os << "_skills: " << rhs._skills;
-    //for each loop
-        for(std::string elem : rhs._skills){
-            os<<elem<<"\t";
-        }   
-           os<< " _id
-            " << rhs._id<< " _age: " << rhs._age<<"\n";
-        return os;
-    }
+    // friend std::ostream &operator<<(std::ostream &os, const Employee<A> &rhs) {
+    //     //os << "_skills: " << rhs._skills;
+    // //for each loop
+    //     for(std::string elem : rhs._skills){
+    //         os<<elem<<"\t";
+    //     }   
+    //        os<< " _id
+    //         " << rhs._id<< " _age: " << rhs._age<<"\n";
+    //     return os;
+    // }
     
 };
 int main(){
@@ -39,5 +39,5 @@ int main(){
     //Object of class Employee of list of strings
     //ls specifies the type of T (std::list<std::string>)
     Employee<ls>* e1=new Employee<ls>(skills,"e101",34.2f); 
-    std::cout<<*e1;
+    // std::cout<<*e1;
 }
