@@ -20,7 +20,7 @@ void createObject(Card *arr[5])
     std::cout<<"array created";
 
 }
-void MatchingIssueCard(Card *arr[5], Issuer issue,Card** res)
+void MatchingIssueCard(Card *arr[5], Issuer issue,Card* res[5])
 {
     if(CheckNull(arr)){
         throw std::runtime_error("Array is empty");

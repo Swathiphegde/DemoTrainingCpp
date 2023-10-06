@@ -3,7 +3,7 @@
 int main(){
     Card* arr[5];
     
-    Card** ress{nullptr};
+    Card* ress[5]{nullptr};
     try{
     createObject(arr);
     MatchingIssueCard(arr,Issuer::MASTERCARD,ress);
