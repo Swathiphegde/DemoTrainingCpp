@@ -1,4 +1,5 @@
 #include "Functionalities.h"
+
 bool CheckNull(Card *arr[5])
 {
 
@@ -11,19 +12,20 @@ bool CheckNull(Card *arr[5])
 }
 void createObject(Card *arr[5])
 {
-    arr[0]=new DebitCard(101,201,658.9f,4,Issuer::MASTERCARD,5);
-    arr[1]=new DebitCard(102,202,558.9f,5,Issuer::RUPAY,5);
-    arr[2]=new DebitCard(103,203,878.9f,4,Issuer::VISA,5);
-    arr[3]=new CreditCard(104,204,656.7f,4,Issuer::RUPAY,CreditCardType::DELUX);
-    arr[4]=new CreditCard(105,205,544.9f,3,Issuer::VISA,CreditCardType::SIGNATURE);
+    arr[0]=new DebitCard(1011,201,658.9f,4,Issuer::MASTERCARD,5);
+    arr[1]=new DebitCard(1021,202,558.9f,5,Issuer::RUPAY,5);
+    arr[2]=new DebitCard(1031,203,878.9f,4,Issuer::VISA,5);
+    arr[3]=new CreditCard(1041,204,656.7f,4,Issuer::RUPAY,CreditCardType::DELUX);
+    arr[4]=new CreditCard(1051,205,544.9f,3,Issuer::VISA,CreditCardType::SIGNATURE);
+    std::cout<<"array created";
 
 }
-Card **MatchingIssueCard(Card *arr[5], Issuer issue)
+void MatchingIssueCard(Card *arr[5], Issuer issue,Card** res)
 {
     if(CheckNull(arr)){
         throw std::runtime_error("Array is empty");
     }
-    Card* res[5]={nullptr};
+    //Card* res[5]={nullptr};
     int k=0;
     for(int i=0;i<5;i++){
         if(arr[i]==nullptr){    //If first object is null but second is not
@@ -34,7 +36,7 @@ Card **MatchingIssueCard(Card *arr[5], Issuer issue)
             res[k++]=arr[i];
         }
     }
-    return res;
+    //return res;
 }
 
 int HighestChargedCard(Card *arr[5])

@@ -17,6 +17,9 @@ public:
         Issuer issuer,
         int transaction_limit);
     ~DebitCard(){}
+    int operator+(const DebitCard c2){
+        return this->limit()+c2.limit();
+    }
     float calculateOnCharge() override;
 
     friend std::ostream &operator<<(std::ostream &os, const DebitCard &rhs);

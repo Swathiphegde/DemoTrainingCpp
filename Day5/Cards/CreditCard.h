@@ -17,6 +17,9 @@ public:
         Issuer issuer,
         CreditCardType category);
     ~CreditCard(){}
+    int operator+(const CreditCard c2){
+        return this->limit()+c2.limit();
+    }
     float calculateOnCharge() override;
 
     friend std::ostream &operator<<(std::ostream &os, const CreditCard &rhs);

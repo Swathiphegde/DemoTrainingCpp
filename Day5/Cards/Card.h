@@ -21,6 +21,7 @@ public:
     );
     ~Card() {}
 
+
     virtual float calculateOnCharge() =0;
 
     int number() const { return _number; }

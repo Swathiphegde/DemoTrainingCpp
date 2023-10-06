@@ -4,6 +4,7 @@
 #include "DebitCard.h"
 #include "CreditCardType.h"
 #include "CreditCard.h"
+#include<iostream>
 /*
 A function to pointer array is null or not
 */
@@ -15,7 +16,7 @@ void createObject(Card* arr[5]);
 /*
 return an array of card pointer for those Cards whose _issuer matches the second pattern
 */
-Card** MatchingIssueCard(Card* arr[5],Issuer issue);
+void MatchingIssueCard(Card* arr[5],Issuer issue,Card** res);
 /*
 return pointer to the array of card with highest annual_charge
 */
